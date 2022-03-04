@@ -11,7 +11,7 @@ body
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    background-color: #a1c3ff;
+    background-color: #323232;
 }
 
 img
@@ -38,9 +38,16 @@ ul
 
 .navbar
 {
-    background: #564CA4;
+    padding: 20px 35px;
+    position: fixed;
+    width: 100%;
+    background: #111111;
     color: #fff;
     height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .navbar .logo
@@ -59,15 +66,7 @@ ul
 
 .navbar a:hover
 {
-    color: #6B6299;
-}
-
-.navbar .container
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+    color: #323232;
 }
 
 .navbar ul
@@ -78,6 +77,38 @@ ul
 .navbar ul li
 {
     margin-left: 20px;
+}
+
+.header
+{
+    background-image: url('../images/header-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 700px;
+}
+
+.header h1
+{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    border-bottom: 2px solid black;
+}
+
+.header p
+{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 0.9;
+}
+
+.header .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 
