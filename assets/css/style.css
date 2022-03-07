@@ -62,6 +62,13 @@ ul
     font-weight: bold;
 }
 
+.navbar .logo:hover
+{
+    border-bottom: 1px solid red;
+    text-decoration: underline;
+    transition: width 2s;
+}
+
 .navbar a
 {
     color: #fff;
@@ -73,7 +80,6 @@ ul
 .navbar a:hover
 {
     border-bottom: 1px solid red;
-    padding: 0 0 4px;
     text-decoration: underline;
     transition: width 2s;
 }
@@ -332,7 +338,7 @@ ul
 
     .contact a
     {
-        margin: 50px;
+        padding-top: 50px;
     }
 }
 /* iphone support end*/
