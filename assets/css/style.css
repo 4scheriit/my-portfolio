@@ -272,6 +272,11 @@ ul
     border-bottom: 2px solid var(--secondary-color);
 }
 
+.contact a:hover
+{
+    color: red;
+}
+
 .contact-title 
 {
     flex: 1;
