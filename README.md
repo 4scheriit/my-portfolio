@@ -21,7 +21,7 @@ Maxwell Brown's portfolio with contact information, past projects, information o
 * Right click on index.html and select open with (preferred browser)
 
 ### Usage
-![ScreenShot](assets/images/screenshot1.PNG)
+![ScreenShot](assets/images/screenshot01.PNG)
 
 Website header can be clicked on to take user to the relevant section of the page
 
@@ -31,11 +31,6 @@ Contributors names and contact info:
 
 4scheriit  
 mbrownet@gmail.com
-
-## Version History
-
-* 0.1
-    * Initial Release
 
 ## License
 
