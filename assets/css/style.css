@@ -37,6 +37,12 @@ h2
     flex-wrap: wrap;
 }
 
+.photo 
+{
+   width: 100%;
+   height: 100%; 
+}
+
 ul
 {
     list-style-type: none;
@@ -271,3 +277,57 @@ ul
     padding: 15px 20px;
 }
 /* contact section end */
+
+/* iphone support start*/
+@media screen and (max-width: 575px) 
+{
+    .navbar
+    {
+        flex-direction: column;
+        height: 160px;
+        text-align: center;
+    }
+
+    .header .container 
+    {
+        flex-direction: column;
+        padding-top: 200px;
+        text-align: center;
+    }
+
+    .about-title, .contact-title, .work-title
+    {
+        border-right: none;
+        border-bottom: 2px solid #6E6E6E;
+        text-align: center;
+    }
+
+    .about .container 
+    {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .work .container 
+    {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .work-project
+    {
+        padding-top: 20px;
+        text-align: center;
+        height: 100px;
+    }
+    
+    .contact .container 
+    {   
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+/* iphone support end*/
