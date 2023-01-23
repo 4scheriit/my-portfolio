@@ -104,16 +104,6 @@ ul
 {
     margin-left: 20px;
 }
-
-#about-section
-{
-    scroll-margin-top: 320px;
-}
-
-#work-section
-{
-    scroll-margin-top: 70px;
-}
 /* navigation end */
 
 /* header start */
@@ -141,7 +131,6 @@ ul
     line-height: 1.2;
     border-bottom: 2px solid black;
     animation: appear 1.0s ease-in;
-    animation-fill-mode: forwards;
 }
 
 .header p
@@ -150,9 +139,8 @@ ul
     font-weight: bold;
     line-height: 0.9;
     position: relative;
-    bottom: -100px; /* hide the text off the screen */
     visibility: hidden;
-    animation: appear-from-bottom 1.0s ease-in forwards;
+    animation: appear-from-bottom 1.0s ease-in both;
     animation-delay: 1s;
 }
 /* header end */
@@ -229,61 +217,39 @@ ul
     flex: 100%;
     height: 400px;
     background-image: url('../images/p1.jpg');
-    filter: brightness(0.8);
-    transition: filter 0.5s ease; 
-}
-
-.work-content .work-project:nth-child(1):hover
-{
-    filter: brightness(1.0);
 }
 
 .work-content .work-project:nth-child(2)
 {
     background-image: url('../images/p2.jpg');
-    filter: brightness(0.8);
-    transition: filter 0.5s ease; 
-}
-
-.work-content .work-project:nth-child(2):hover
-{
-    filter: brightness(1.0);
 }
 
 .work-content .work-project:nth-child(3)
 {
     background-image: url('../images/p3.jpg');
-    filter: brightness(0.8);
-    transition: filter 0.5s ease;
 }
-
-.work-content .work-project:nth-child(3):hover
-{
-    filter: brightness(1.0);
-}
-
 
 .work-content .work-project:nth-child(4)
 {
     background-image: url('../images/p4.jpg');
-    filter: brightness(0.8);
-    transition: filter 0.5s ease;
 }
-
-.work-content .work-project:nth-child(4):hover
-{
-    filter: brightness(1.0);
-}
-
 
 .work-content .work-project:nth-child(5)
 {
     background-image: url('../images/p5.jpg');
+}
+
+.work-content .work-project:nth-child(1),
+.work-content .work-project:nth-child(2),
+.work-content .work-project:nth-child(3),
+.work-content .work-project:nth-child(4),
+.work-content .work-project:nth-child(5)
+{
     filter: brightness(0.8);
     transition: filter 0.5s ease;
 }
 
-.work-content .work-project:nth-child(5):hover
+.work-content .work-project:hover
 {
     filter: brightness(1.0);
 }
@@ -301,7 +267,7 @@ ul
     position: relative;
 }
 
-.work-project h2, .work-project .lang-used
+.work-project-text
 {
     text-shadow: 1px 3px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -327,7 +293,6 @@ ul
     flex-direction: column;
     flex: 2;
 }
-
 /* work section end */
 
 /* contact section start */
@@ -399,7 +364,7 @@ ul
       bottom: 0;
       opacity: 1;
     }
-  }
+}
 
 /* iphone support start*/
 @media screen and (max-width: 675px) 
