@@ -67,28 +67,31 @@ ul
 {
     font-size: x-large;
     font-weight: bold;
+    text-decoration: none #111111;
+    transition: all 0.8s;
+    border-bottom: #111111;
 }
 
 .navbar .logo:hover
 {
     border-bottom: 1px solid red;
     text-decoration: underline;
-    transition: width 2s;
 }
 
 .navbar a
 {
     color: var(--primary-color);
-    text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    text-decoration: none #111111;
+    transition: all 0.8s;
+    border-bottom: #111111;
 }
 
 .navbar a:hover
 {
     border-bottom: 1px solid red;
     text-decoration: underline;
-    transition: width 2s;
 }
 
 .navbar ul
@@ -210,26 +213,64 @@ ul
 {
     flex: 100%;
     height: 400px;
-    background-image: url('../images/p1.jpg'); 
+    background-image: url('../images/p1.jpg');
+    filter: brightness(0.8);
+    transition: filter 0.5s ease; 
+}
+
+.work-content .work-project:nth-child(1):hover
+{
+    filter: brightness(1.0);
 }
 
 .work-content .work-project:nth-child(2)
 {
-    background-image: url('../images/p2.jpg'); 
+    background-image: url('../images/p2.jpg');
+    filter: brightness(0.8);
+    transition: filter 0.5s ease; 
+}
+
+.work-content .work-project:nth-child(2):hover
+{
+    filter: brightness(1.0);
 }
 
 .work-content .work-project:nth-child(3)
 {
     background-image: url('../images/p3.jpg');
+    filter: brightness(0.8);
+    transition: filter 0.5s ease;
 }
+
+.work-content .work-project:nth-child(3):hover
+{
+    filter: brightness(1.0);
+}
+
 
 .work-content .work-project:nth-child(4)
 {
     background-image: url('../images/p4.jpg');
+    filter: brightness(0.8);
+    transition: filter 0.5s ease;
 }
+
+.work-content .work-project:nth-child(4):hover
+{
+    filter: brightness(1.0);
+}
+
+
 .work-content .work-project:nth-child(5)
 {
     background-image: url('../images/p5.jpg');
+    filter: brightness(0.8);
+    transition: filter 0.5s ease;
+}
+
+.work-content .work-project:nth-child(5):hover
+{
+    filter: brightness(1.0);
 }
 
 .work-project
@@ -247,12 +288,13 @@ ul
 
 .work-project h2, .work-project .lang-used
 {
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
 .work-project .lang-used
 {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 3px;
 }
 
@@ -268,6 +310,7 @@ ul
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex: 2;
 }
 
 /* work section end */
@@ -287,6 +330,7 @@ ul
     text-decoration: none;
     margin-right: 30px;
     border-bottom: 2px solid var(--secondary-color);
+    transition: all 0.8s;
 }
 
 .contact a:hover
