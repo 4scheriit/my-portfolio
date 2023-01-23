@@ -140,6 +140,8 @@ ul
     font-weight: bold;
     line-height: 1.2;
     border-bottom: 2px solid black;
+    animation: appear 1.0s ease-in;
+    animation-fill-mode: forwards;
 }
 
 .header p
@@ -147,6 +149,11 @@ ul
     font-size: 2rem;
     font-weight: bold;
     line-height: 0.9;
+    position: relative;
+    bottom: -100px; /* hide the text off the screen */
+    visibility: hidden;
+    animation: appear-from-bottom 1.0s ease-in forwards;
+    animation-delay: 1s;
 }
 /* header end */
 
@@ -357,6 +364,35 @@ ul
     padding: 15px 20px;
 }
 /* contact section end */
+
+@keyframes appear 
+{
+    from 
+    {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to 
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear-from-bottom 
+{
+    0% 
+    { 
+      bottom: -100px;
+      opacity: 0;
+    }
+    100% 
+    {
+      visibility: visible; 
+      bottom: 0;
+      opacity: 1;
+    }
+  }
 
 /* iphone support start*/
 @media screen and (max-width: 675px) 
